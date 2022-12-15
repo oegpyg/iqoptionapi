@@ -199,6 +199,7 @@ sudo pip3 install websocket-client==0.47.0
 import time
 from iqoptionapi.stable_api import IQ_Option
 Iq=IQ_Option("email","password")
+Iq.connect()
 goal="EURUSD"
 print("get candles")
 print(Iq.get_candles(goal,60,111,time.time()))
